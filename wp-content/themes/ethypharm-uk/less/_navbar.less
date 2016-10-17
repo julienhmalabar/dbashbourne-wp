@@ -1,0 +1,288 @@
+.navbar-wrapper {
+	display: block;
+
+	@media all and (max-width: @screen-sm-max) {
+		display: none;
+		left: 0;
+		overflow: auto;
+		position: absolute;
+		top: 80px;
+		width: 100%;
+
+	    z-index: 9;
+	}
+}
+
+.navbar {
+	margin: 0 auto;
+    overflow: hidden;
+
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+
+	@media all and (max-width: @screen-sm-max) {
+		width: 100%;
+	}
+
+	@media all and (max-width: @screen-sm) {
+		width: 550px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 14px;
+
+		font-family: @fontlight;
+		font-weight: 100;
+		font-size: 15px;
+		line-height: 60px;
+
+		@media all and (max-width: 1380px) {
+			padding: 0 5px;
+			font-size: 14px;
+
+			&.navbar-item-title {
+				padding-top: 0 !important;
+			}
+		}
+
+		@media all and (max-width: 1150px) {
+		    font-size: 12px;
+
+		    &.navbar-item-title {
+				padding-top: 1px !important;
+			}
+		}
+	}
+
+	a {
+		display: block;
+
+		text-decoration: none;
+	
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.nav-left {
+		background-color: @blue;
+		display: inline-block;
+		padding-right: 30px;
+		position: relative;
+		//width: 45%;
+
+		&:after {
+			content: "";
+			display: block;
+			background-color: @blue;
+			height: 60px;
+			position: absolute;
+			left: -1195px;
+			top: 0;
+			width: 1920px;
+			z-index: -1;
+		}
+	}
+
+	.nav-right {
+		background-color: @orange;
+		display: inline-block;
+		padding-left: 74px;
+		position: relative;
+		
+		@media all and (max-width: 1380px) {
+		    padding-left: 47px;
+		}
+		
+		@media all and (min-width: 1162px) and (max-width: 1212px) {
+		    padding-left: 45px;
+		}
+		
+		@media all and (max-width: 1162px) {
+		    padding-left: 19px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			height: 60px;
+			position: absolute;
+			left: -26px;
+			top: 0;
+			width: 40px;
+
+			background-color: blue;
+
+			border-left: 18px solid @blue;
+    		border-bottom: 71px solid @orange;
+    	}
+
+		&:after {
+			content: "";
+			display: block;
+			background-color: @orange;
+			height: 60px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1920px;
+			z-index: -1;
+		}
+
+		/*@media all and (max-width: 1366px) {
+	    	&:before { left: -23px; }
+		}
+
+		@media all and (max-width: 1330px) {
+	    	&:before { left: -6px; }
+		}
+
+		@media all and (max-width: 1300px) {
+	    	&:before { left: -30px; }
+		}
+
+		@media all and (max-width: @screen-lg) {
+	    	&:before { left: -22px; }
+		}
+
+		@media all and (max-width: 1100px) {
+	    	&:before { left: -31px; }
+		}*/
+
+	}
+
+	.nav-left, .nav-right {
+
+		@media all and (max-width: @screen-sm-max) {
+			height: 320px;
+			padding: 0;
+			width: 50%;
+
+			vertical-align: top;
+
+			&:before, &:after {
+				content: none;
+			}
+
+			li {
+				padding: 0 0 0 20px;
+				display: block;
+
+				text-align: left;
+			}
+
+		}
+
+		@media all and (max-width: @screen-sm-max) {
+			display: inline-block;
+			height: 550px;
+			width: 50%;
+		}
+
+		@media all and (max-width: @screen-sm) {
+			width: 275px;
+		}
+
+	}
+
+
+	.nav-left .nav-mobiletitle {
+			background-color: @bluedark;
+	}
+
+	.nav-right .nav-mobiletitle {
+			background-color: @orangedark;
+	}
+
+
+	.nav-mobiletitle {
+		display: none;
+
+		font-family: @fontbold;
+		font-size: 16px;
+		line-height: 72px;
+
+		@media all and (max-width: @screen-sm-max) {
+			display: block;
+		}
+
+	}
+
+
+
+	// Custom navbar for pro AND public pages
+	&.navbar--public {
+		.nav-left {
+		    padding-right: 60px;
+
+		    @media all and (max-width: @screen-md) {
+    			padding-right: 0;
+    		}
+		}
+
+		.nav-right {
+			width: 60%;
+    		
+    		text-align: left;
+
+    		@media all and (max-width: @screen-md) {
+    			width: 50%;
+    		}
+		}
+
+		.navbar-item-title {
+		    padding-right: 80px;
+			padding-top: 1px;
+
+			font-family: @fontbold;
+		    line-height: 59px;
+		}
+	}
+
+	&.navbar--pro {
+
+		.navbar-item-title {
+			padding-right: 80px;
+			padding-top: 1px;
+
+			font-family: @fontbold;
+	        line-height: 59px;
+		}
+	}
+
+
+
+
+
+}
+
+.home .navbar li.hidden-home{
+    display:none;
+}
+
+.parent-pageid-14 .parent-pageid-14-hidden,
+.page-id-14 .parent-pageid-14-hidden{
+    @media all and (min-width: @screen-md) {
+        display:none;
+    }
+}
+.parent-pageid-4 .parent-pageid-4-hidden,
+.page-id-4 .parent-pageid-4-hidden{
+    @media all and (min-width: @screen-md) {
+        display:none;
+    }
+}
+
+.single-product .parent-pageid-4-hidden{
+    @media all and (min-width: @screen-md) {
+        display:none;
+    }
+}

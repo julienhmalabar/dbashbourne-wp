@@ -1,0 +1,152 @@
+.cscTable {
+	display: block;
+	float: left;
+	position: relative;
+    width: 100%;
+}
+
+
+.cscTable-grid {
+	bottom: 0;
+	display: block;
+	left: -450px;
+	position: absolute;
+	top:0;
+	width: 2400px;
+	z-index: 0;
+
+	.cscTable-grid-line1 {
+		background-color: @bluelight;
+		height: 96px;
+	}
+
+	.cscTable-grid-line2 {
+		background-color: @blue;
+		height: 84px;
+	}
+
+	.cscTable-grid-line3 {
+		background-color: @bluelight;
+		height: 95px;
+	}
+}
+
+
+.cscTable-wrapper {
+	z-index: 1;
+
+	@media all and (max-width: @screen-sm) {
+		overflow: hidden;
+	}
+}
+
+.cscTable-tools {
+	display: none;
+
+	@media all and (max-width: @screen-sm) {
+		display: block;
+
+		color: #fff;
+		cursor: pointer;
+		font-size: 32px;
+	
+		&--left {
+			position: absolute;
+			left: 35px;
+			top: 30px;
+
+		}
+
+		&--right {
+			position: absolute;
+			right: 20px;
+			top: 30px;
+		}
+	}
+
+}
+
+.cscTable-table {
+	border-bottom: 5px solid @bluelight;
+	border-top: 10px solid @bluelight;
+	display: table;
+	width: 100%;
+
+	@media all and (max-width: @screen-sm) {
+		display: block;
+	}
+
+	
+
+	.cscTable-column {
+		border-left: 1px solid #cdced0;
+		display: inline-block;
+		width: calc(~"100% / 6");
+
+		@media all and (max-width: @screen-sm) {
+			border: 0;
+			width: 339px;
+		}
+
+		&:first-child {
+			border: 0;
+		}
+	}
+
+	.cscTable-column--hidden-768 {
+		@media all and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&.cscTable-table--6cols {
+		.cscTable-column {
+			width: 16.6666%;
+		}
+	}
+
+	.cscTable-cell {
+		//display: table-cell;
+		padding: 32px 0;
+
+		color: #fff;
+		text-align: center;
+
+		&:first-child {
+			color: #fff;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		&:nth-child(odd) {
+		    @media all and (max-width: 768px) {
+			    background-color: @bluelight;
+		    }
+		}
+
+		&:nth-child(even) {
+			@media all and (max-width: 768px) {
+			    background-color: @blue;
+			}
+		}
+
+		span:not(.update-data) {
+			font-size: 16px;
+			text-transform: uppercase;
+			
+		
+		}
+
+		.cscTable-cell--ellipsis {
+			display: block;
+			overflow: hidden;
+		    width: 95%;
+
+		    line-height: 14px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+	}
+
+}

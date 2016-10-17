@@ -1,0 +1,163 @@
+.section-category-c {
+	background-color: @blue;
+
+	.category-c-title {
+		padding-bottom: 50px;
+
+		color: #fff;
+		font-family: @fontbold;
+		font-size: 28px;
+		text-align: center;
+		text-transform: uppercase;
+
+	}
+
+	.category-c-schema {
+		position: relative;
+		height: 340px;
+		margin: auto;
+		width: 920px;
+
+		color: #fff;
+
+		@media all and (max-width: @screen-md) {
+			height: auto;
+			width: auto;
+		}
+
+		&-bigItem {
+			background: #fff;
+			display: block;
+			margin: 0 auto;
+			padding: 10px 0;
+			width: 240px;
+
+			color: @blue;
+			font-size: 22px;
+			text-align: center;
+			text-transform: uppercase;
+
+		}
+
+		&-productName {
+			position: absolute;
+			top: 30px;
+
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			@media all and (max-width: @screen-md) {
+				position: static;
+			}
+
+			&--left {
+				left: 0;
+
+				@media all and (max-width: @screen-md) {
+					padding-top: 40px;
+				}
+			}
+
+			&--right {
+				right: 0;
+
+				text-align: right;
+
+				@media all and (max-width: @screen-md) {
+					padding-top: 40px;
+
+					text-align: left;
+				}
+			}
+		}
+
+		&-productItem {
+			position: absolute;
+			width: 400px;
+
+			@media all and (max-width: @screen-md) {
+				position: static;
+				width: auto;
+				max-width: 280px;
+			}
+
+			&--top {
+				top: 80px;
+			}
+
+			&--bottom {
+				top: 80px;
+			    width: 430px;
+
+				.category-c-schema-productLine1 {
+					padding-top: 150px !important;
+
+					@media screen and (max-width: @screen-md) {
+			    		padding-top: 30px !important;
+			    	}
+				}
+			}
+
+			&--right {
+				right: 0;
+
+				text-align: right;
+
+				@media all and (max-width: @screen-md) {
+					right: auto;
+					text-align: left;
+				}
+			}
+
+			.category-c-schema-productLine1 {
+				border-bottom: 3px solid #fff;
+				padding-top: 20px;
+
+				font-size: 16px;
+			    line-height: 42px;
+
+			    @media screen and (max-width: @screen-md) {
+			    	padding-top: 10px;
+			    }
+			}
+
+			.b-left {
+		    	border-left: 3px solid #fff;
+
+		    	@media screen and (max-width: @screen-md) {
+		    		border-left: 0;
+		    	}
+		    }
+
+		    .b-right {
+		    	border-right: 3px solid #fff;
+
+		    	@media screen and (max-width: @screen-md) {
+		    		border-right: 0;
+		    	}
+		    }
+
+		    
+
+			.category-c-schema-productLine2 {
+				font-size: 13px;
+				line-height: 28px;
+			}
+
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
