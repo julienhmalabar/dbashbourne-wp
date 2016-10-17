@@ -1,0 +1,220 @@
+.section-contact {
+
+	.section-contact-title {
+		padding-bottom: 25px;
+
+		color: @purple;
+		font-family: @fontbold;
+		font-size: 32px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.section-contact-subtitle {
+		padding-bottom: 50px;
+
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.section-contact-select {
+		.fancy-select {
+			.trigger {
+				background-color: #fff;
+				border-bottom: 3px solid @purple;
+				padding: 5px 0;
+				max-width: 390px;
+
+				color: @purple;
+				text-transform: none;
+
+				&:after {
+					content: '\e902';
+				    right: 20px;
+				    top: -6px;
+
+					font-family: 'ethypharmuk-picto' !important;
+					font-size: 14px;
+					line-height: 32px;
+				}
+			}
+
+			.options {
+				max-width: 390px;
+
+				li {
+					color: @purple;
+
+					&:hover {
+						background-color: @purple;
+
+						color: #fff;
+					}
+				}
+
+				&.open {
+					border: 3px solid @purple;
+					border-top: 0;
+				    top: 33px;
+					width: 390px;
+					min-width: 0;
+				}
+			}
+		}
+	}
+
+	.section-contact-textarea {
+		padding-bottom: 40px;
+
+		@media all and (max-width: @screen-md) {
+			padding-top: 40px;
+		}
+
+		& > div {
+			padding-bottom: 8px;
+
+			color: @purple;
+			font-weight: bold;
+		}
+
+		textarea {
+			border: 3px solid @purple;
+			height: 150px;
+			width: 450px;
+
+			@media all and (max-width: @screen-md) {
+			    width: 100%;
+			}
+		}
+	}
+
+	label {
+		border-bottom: 3px solid @purple;
+		display: block;
+		margin-bottom: 40px;
+		max-width: 390px;
+
+		color: @purple;
+		font-weight: bold;
+		line-height: 32px;
+
+		span {
+			display: inline-block;
+			width: 100px;
+		}
+	}
+
+	input[type="email"], input[type="tel"], input[type="text"] {
+		border: 0;
+		outline: 0;
+		width:200px;
+		@media all and (min-width: @screen-md) {
+		    width:260px;
+		}
+	}
+
+	.section-contact-error {
+		//display: none;
+		padding: 20px 0;
+
+		color: @purple;
+		font-size: 16px;
+		text-align: center;
+
+		.error-global {
+			display: none;
+		}
+
+		.error-email {
+			display: none;
+		}
+
+		.error-recaptcha {
+			display: none;
+		}
+
+	}
+
+	.section-contact-button {
+		padding-top: 50px;
+
+		text-align: center;
+
+		input {
+			border-size: 3px;
+		}
+	}
+
+}
+
+.section-contact-map {
+
+	.section-contact-map-left {
+		background-color: #fff;
+		display: inline-block;
+		height: 350px;
+		overflow: hidden;
+		width: 50%;
+
+		vertical-align: top;
+
+		@media all and (max-width: @screen-md) {
+			display: block;
+			width: 100%;
+		}
+
+		.googlemap {
+	        position: relative;
+	        padding-bottom: 75%; /* 4:3 ratio*/
+	        height: 0;
+	        overflow: hidden;
+		}
+
+		.googlemap iframe {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    width: 100% !important;
+		    height: 100% !important;
+		}
+
+
+	}
+
+	.section-contact-map-right {
+		background-color: @purple;
+		display: inline-block;
+		padding: 50px 60px;
+		height: 350px;
+		width: 50%;
+
+		color: #fff;
+		vertical-align: top;
+
+		@media all and (max-width: @screen-md) {
+			display: block;
+			width: 100%;
+		}
+
+		@media all and (max-width: @screen-sm) {
+			height: auto;
+			padding: 30px 30px;
+		}
+	}
+
+	.section-contact-map-title {
+		padding-bottom: 20px;
+
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+
+	
+
+}
+
+#section-contact-message {
+	display: none;
+}

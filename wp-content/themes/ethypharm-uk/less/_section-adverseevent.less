@@ -1,0 +1,34 @@
+.section-adverseevent {
+	
+	color: #fff;
+	font-size: 14px;
+	font-family: @fontlight;
+
+	&-title {
+		font-family: @fontbold;
+		font-size: 36px;
+		text-transform: uppercase;
+
+		@media all and (max-width: @screen-sm) {
+			font-size: 28px;
+		}
+
+		&:after {
+			background-color: #fff;
+			content: "";
+			display: block;
+			height: 3px;
+			margin: 40px 0 60px 0;
+			width: 160px;
+
+			@media all and (max-width: @screen-sm) {
+				margin: 25px 0 40px 0;
+			}
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+}

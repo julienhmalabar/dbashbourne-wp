@@ -1,0 +1,83 @@
+.filter-selector {
+	padding-bottom: 110px;
+	width: 100%;
+}
+
+.filter-selector-label {
+	display: inline-block;
+	// padding-right: 40px;
+	width: 25%;
+
+	text-transform: uppercase;
+
+	@media all and (max-width: @screen-lg) {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	
+}
+
+.filter-selector input.filter-selector-all:checked ~ label.filter-label-all,
+.filter-selector input.filter-selector-1:checked ~ label.filter-label-1,
+.filter-selector input.filter-selector-2:checked ~ label.filter-label-2,
+.filter-selector input.filter-selector-3:checked ~ label.filter-label-3,
+.filter-selector input.filter-selector-4:checked ~ label.filter-label-4,
+.filter-selector input.filter-selector-5:checked ~ label.filter-label-5,
+.filter-selector input.filter-selector-6:checked ~ label.filter-label-6{
+	background: @orange;
+
+	color: #fff;
+}
+
+.filter-selector input {
+	display: none;
+}
+
+.filter-selector label {
+	background: @graylight;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0 10px;
+	width: 10%;
+
+	color: @graydark;
+	cursor: pointer;
+	line-height: 32px;
+	text-align: center;
+
+	@media all and (max-width: @screen-lg) {
+		margin: 10px auto;
+		width: 25%;
+	}
+
+	@media all and (max-width: @screen-md) {
+		margin: 10px auto;
+		width: 33%;
+	}
+
+	@media all and (max-width: @screen-sm) {
+		margin: 10px auto;
+		width: 48%;
+	}
+
+	&:hover {
+		background: @orange;
+
+		color: #fff;
+	}
+}
+
+.collapsing-faq .collapsing-item {
+	display: none;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.filter-selector input.filter-selector-all:checked ~ .collapsing-faq .collapsing-item,
+.filter-selector input.filter-selector-1:checked ~ .collapsing-faq .filter-selector-1,
+.filter-selector input.filter-selector-2:checked ~ .collapsing-faq .filter-selector-2,
+.filter-selector input.filter-selector-3:checked ~ .collapsing-faq .filter-selector-3,
+.filter-selector input.filter-selector-4:checked ~ .collapsing-faq .filter-selector-4,
+.filter-selector input.filter-selector-5:checked ~ .collapsing-faq .filter-selector-5,
+.filter-selector input.filter-selector-6:checked ~ .collapsing-faq .filter-selector-6 {
+	display: block;
+}
