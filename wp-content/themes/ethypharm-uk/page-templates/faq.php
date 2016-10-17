@@ -8,6 +8,24 @@
 include(locate_template('variables.php'));
 if(have_posts()) : 
 	while(have_posts()) : the_post();
+	
+	$args = array(
+    'post_type'      => 'product',
+    'posts_per_page' => -1,
+    'order'          => 'ASC'
+ );
+ 
+
+
+$prod = new WP_Query( $args );
+$products_label = array();
+if ( $prod ->have_posts() ) : 
+	while ( $prod ->have_posts() ) : $prod ->the_post(); 
+		$products_label[get_the_id()] = get_the_title();
+	endwhile; 
+endif; wp_reset_query();
+print_r($products_label);
+	
 ?>
 
 
