@@ -24,7 +24,6 @@ if ( $prod ->have_posts() ) :
 		$products_label[get_the_id()] = get_the_title();
 	endwhile; 
 endif; wp_reset_query();
-print_r($products_label);
 	
 ?>
 
