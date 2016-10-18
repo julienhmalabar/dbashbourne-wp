@@ -42,6 +42,7 @@ $args = array(
     'posts_per_page' => -1,
 	'orderby' => 'menu_order',
 	'order'          => 'ASC'
+	
  );
 
 $prod = new WP_Query( $args );
