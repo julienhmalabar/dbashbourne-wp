@@ -92,6 +92,7 @@ if ( $prod ->have_posts() ) : ?>
 <?
 $dl_file = get_field('top_right_download_file');
 $dl_link = get_field('top_right_download_link');
+
 $dl_src = ($dl_file != '')?$dl_file:$dl_link;
 if($dl_src != ''){
 ?>                            
