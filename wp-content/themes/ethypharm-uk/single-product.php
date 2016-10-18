@@ -98,7 +98,7 @@ if($dl_src != ''){
 ?>                            
 								<div class="btn-huge">
 									<!--<button type="button" class="btn-huge-link" data-toggle="modal" data-target=".exit-modal"><? the_field("top_right_download_label"); ?></button>-->
-                                    <span<? if($dl_file == ''){ ?> class="external-link"<? } ?>><a href="<?=$dl_src;?>"><? the_field("top_right_download_label"); ?></a></span>
+                                    <span<? if($dl_file == ''){ ?> class="external-link"<? } ?>><a<? if($dl_file != ''){ echo ' target="_blank"'; } ?> href="<?=$dl_src;?>"><? the_field("top_right_download_label"); ?></a></span>
 								</div>
 
 								<div class="modal fade exit-modal" tabindex="-1" role="dialog" aria-labelledby="exit-modal">
@@ -323,7 +323,7 @@ if( have_rows('attached_files') ):
 	
 ?>
 
-						<li><a target="_blank" href="<?=$dl_src; ?>"><? the_sub_field('file_label'); ?></a></li>
+						<li><span<? if($dl_file == ''){ ?> class="external-link"<? } ?>><a<? if($dl_file != ''){ echo ' target="_blank"'; } ?> href="<?=$dl_src; ?>"><? the_sub_field('file_label'); ?></a></span></li>
 						
 					
 <?
