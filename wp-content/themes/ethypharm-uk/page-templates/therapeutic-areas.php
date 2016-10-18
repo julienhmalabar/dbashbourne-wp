@@ -40,7 +40,8 @@ if(have_posts()) :
 $args = array(
     'post_type'      => 'therapeutic_areas',
     'posts_per_page' => -1,
-    'order'          => 'ASC'
+	'orderby' => 'menu_order',
+	'order'          => 'ASC'
  );
 
 $prod = new WP_Query( $args );
