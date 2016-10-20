@@ -80,7 +80,9 @@ get_template_part( 'template-parts/page-content' );
 								<textarea id="message" name="message" required></textarea>
 							</div>
 							<div class="section-contact-checkhuman">
-								<div class="g-recaptcha" data-sitekey="6LcARggUAAAAACLXb95x6xiadRUC56ysnj1UGA2H"></div>
+								<div class="g-recaptcha" data-sitekey="6Lc0zwkUAAAAAKui9c1AevG5q3oFclMdPp6soJph"></div>
+                                <!-- <div class="g-recaptcha" data-sitekey="6LcARggUAAAAACLXb95x6xiadRUC56ysnj1UGA2H"></div> -->
+                                
 							</div>
 						</div>
 
