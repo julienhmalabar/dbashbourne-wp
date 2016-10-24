@@ -28,14 +28,14 @@ if(have_posts()) :
 
 		<div class="topbanner-responsive-block hidden-md hidden-lg">
 			<div class="topbanner-responsive-block-col">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/banner-home-left.jpg" class="img-responsive">
+				<img alt="Healthcare professionals" src="<?php echo get_template_directory_uri(); ?>/img/banner-home-left.jpg" class="img-responsive">
 				<div class="topbanner-responsive-block-cta">
 					<div class="topbanner-home-block-title">Healthcare<br>professionals</div>
 					<a href="<?=get_permalink($id_pro); ?>" class="btn btn-large">Discover</a>
 				</div>
 			</div><!-- 
 		 --><div class="topbanner-responsive-block-col">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/banner-home-right.jpg" class="img-responsive">
+				<img alt="Patients &amp; members of the public" src="<?php echo get_template_directory_uri(); ?>/img/banner-home-right.jpg" class="img-responsive">
 				<div class="topbanner-responsive-block-cta">
 					<div class="topbanner-home-block-title">Patients &amp; members<br>of the public</div>
 					<a href="<?=get_permalink($id_patients); ?>" class="btn btn-large">Discover</a>
@@ -63,7 +63,7 @@ get_template_part( 'template-parts/page-bottom' );
 					<div class="section-homeWorld-desc"><?php the_field('box_text_ew', 'option'); ?></div>
 
 					<button type="button" class="btn btn-large btnWorld" data-toggle="modal" data-target=".worldwide-modal">Learn more</button>
-					<div class="modal fade worldwide-modal" tabindex="-1" role="dialog" aria-labelledby="worldwide-modal">
+					<div class="modal fade worldwide-modal" tabindex="-1" role="dialog" aria-labelledby="worldwide-modal" id="worldwide-modal">
 						<div class="modal-dialog modal-md" role="document">
 							<div class="modal-content">
 								<p>You are now leaving Ethypharm UK and will be redirected to Ethypharm Global website</p>
