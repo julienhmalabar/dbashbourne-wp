@@ -132,7 +132,7 @@ if ( $prod ->have_posts() ) : ?>
                         <div class="col-xs-12 col-md-2">
 							<div class="footer-listTitle"><a target="_blank" href="javascript:void(0);" data-toggle="modal" data-target=".ethyfr-modal"><i class="i-puce"></i> Ethypharm Group</a></div>
                             
-                            <div class="modal fade display-modal ethyfr-modal" tabindex="-1" role="dialog" aria-labelledby="ethyfr-modal">
+                            <div class="modal fade display-modal ethyfr-modal" tabindex="-1" role="dialog" aria-labelledby="ethyfr-modal" id="ethyfr-modal">
 								<div class="modal-dialog modal-md" role="document">
 									<div class="modal-content">
 										<p>You are now leaving Ethypharm UK and will be redirected to Ethypharm France website</p>
@@ -206,7 +206,7 @@ if ( has_nav_menu( 'footer' ) )
 	
 </script>
 
-<div class="modal custom-modal fade exit-modal" tabindex="-1" role="dialog" aria-labelledby="exit-modal">
+<div class="modal custom-modal fade exit-modal" tabindex="-1" role="dialog" aria-labelledby="exit-modal" id="exit-modal">
 	<div class="modal-dialog modal-md" role="document">
 		<div class="modal-content">
 			<p>You are now leaving Ethypharm UK and will be redirected to an other website</p>
