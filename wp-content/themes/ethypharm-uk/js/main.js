@@ -222,12 +222,18 @@ $(document).ready(function() {
 
 });
 
-var nbCols = $(".js-table-column").length;
+if ( $(window).width() < 769 ) {
 
-			// On donne la taille totale au conteneur
-			// -- soit "largeur du browser" X "nombre de colonnes à slider"
-			var calcx = $(window).width() * nbCols;
-			$(".js-table-table").css("width", calcx);
+    		
+    	}
+    	else {
+    		var nbCols2 = $(".js-table-column").length;
+    		var calcsize = 100 / nbCols2;
+
+    		$(".js-table-column").css("width", calcsize+"%");
+    		$(".js-table-table").css("width", "100%");
+    		$(".js-table-tablex1").css("width", "100%");
+    	}
 
 // Resize
 
