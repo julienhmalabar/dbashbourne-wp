@@ -222,7 +222,12 @@ $(document).ready(function() {
 
 });
 
+var nbCols = $(".js-table-column").length;
 
+			// On donne la taille totale au conteneur
+			// -- soit "largeur du browser" X "nombre de colonnes à slider"
+			var calcx = $(window).width() * nbCols;
+			$(".js-table-table").css("width", calcx);
 
 // Resize
 
