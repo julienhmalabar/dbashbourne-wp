@@ -243,7 +243,7 @@ if(sizeof($pip_datas)>0){
 					<div class="productTable-wrapper js-table-wrapper">
 						<div class="productTable-table js-table-table">
 <?
-if(sizeof($pip_datas["strength"])>0){
+if(strlen($pip_datas_text["strength"])>0){
 ?>							<div class="productTable-column js-table-column">
 								<div class="productTable-cell">Strength</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>                                
@@ -251,7 +251,7 @@ if(sizeof($pip_datas["strength"])>0){
 <? } ?>
 							</div><? } ?><!--
 						 --><?
-if(sizeof($pip_datas["pack_size"])>0){
+if(strlen($pip_datas_text["pack_size"])>0){
 ?><div class="productTable-column js-table-column">                        
 								<div class="productTable-cell">Pack size</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>                                 
@@ -259,7 +259,7 @@ if(sizeof($pip_datas["pack_size"])>0){
 <? } ?>
 							</div><? } ?><!-- 
 							 --><?
-if(sizeof($pip_datas["pip_code"])>0){
+if(strlen($pip_datas_text["pip_code"])>0){
 ?><div class="productTable-column js-table-column">
 								<div class="productTable-cell">PIP Code</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>                                 
@@ -275,7 +275,7 @@ if(strlen($pip_datas_text["aah_codes"])>0){
 <? } ?>
 							</div><? } ?><!-- 
 							 --><?
-if(sizeof($pip_datas["bar_code"])>0){
+if(strlen($pip_datas_text["bar_code"])>0){
 ?><div class="productTable-column js-table-column">
 								<div class="productTable-cell">Bar Code</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>
@@ -283,7 +283,7 @@ if(sizeof($pip_datas["bar_code"])>0){
 <? } ?>
 							</div><? } ?><!-- 
 							 --><?
-if(sizeof($pip_datas["nhs_list_price"])>0){
+if(strlen($pip_datas_text["nhs_list_price"])>0){
 ?><div class="productTable-column js-table-column">
 								<div class="productTable-cell">NHS List Price</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>
