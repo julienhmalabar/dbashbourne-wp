@@ -16,7 +16,6 @@ get_header(); ?>
 		
 			$product_id = get_the_ID();
 
-
 ?>
 	<div class="container-fluid">
 		<div class="row">
