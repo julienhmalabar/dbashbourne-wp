@@ -227,6 +227,7 @@ if( have_rows('pip-code') ):
 		foreach($pip_datas_fields as $k => $v){
 			
 			$pip_datas[$v][] = get_sub_field($v); 
+			$pip_datas_text[$v] .= get_sub_field($v); 
 		}
 	endwhile;
 endif;
@@ -266,7 +267,7 @@ if(sizeof($pip_datas["pip_code"])>0){
 <? } ?>
 							</div><? } ?><!-- 
 							 --><?
-if(sizeof($pip_datas["aah_codes"])>0){
+if(strlen($pip_datas_text["aah_codes"])>0){
 ?><div class="productTable-column js-table-column">
 								<div class="productTable-cell">AAH Codes</div>
 <? for($i=0; $i< $nb_rows; $i++){ ?>                                 
