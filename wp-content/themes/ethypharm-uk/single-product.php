@@ -267,6 +267,14 @@ if(sizeof($pip_datas["pip_code"])>0){
 <? } ?>
 							</div><? } ?><!-- 
 							 --><?
+if(sizeof($pip_datas["aah_codes"])>0){
+?><div class="productTable-column js-table-column">
+								<div class="productTable-cell">AAH Codes</div>
+<? for($i=0; $i< $nb_rows; $i++){ ?>                                 
+								<div class="productTable-cell"><?=($pip_datas["aah_codes"][$i]!='')?$pip_datas["aah_codes"][$i]:'&nbsp;'; ?></div>
+<? } ?>
+							</div><? } ?><!-- 
+							 --><?
 if(sizeof($pip_datas["bar_code"])>0){
 ?><div class="productTable-column js-table-column">
 								<div class="productTable-cell">Bar Code</div>
