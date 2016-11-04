@@ -259,13 +259,16 @@ function readCCGFile(file)
 						ccg_lines[data[0]] = tarr;
 						
 						if(i==1){ // initialize datas with first occurence
-				
+							val = val.replace(",",".");
+							val = val.replace(" ",",");
 							$("#saving-ccg").html('£'+val);
 							var raw_value = data[0]; 
 							$(".update-data").each(function(){
 								var this_item = $(this).data("item");
 								if(ccg_lines[raw_value][this_item] != undefined){
 									var val =  ccg_lines[raw_value][this_item];
+									val = val.replace(",",".");
+									val = val.replace(" ",",");
 									$(this).html(val);
 								}
 							});
@@ -362,14 +365,21 @@ function readPRACTICEFile(file)
 		var raw_value = $(this).data("raw-value");
 		var val =  ccg_lines[raw_value]["Grand Total"];
 		
+		val = val.replace(",",".");
+		val = val.replace(" ",",");
+		
 		$("#saving-ccg").html('£'+val);
-		$("#saving-practice").html('£0,00');
+		$("#saving-practice").html('£0.00');
 		
 		
 		$(".update-data").each(function(){
 			var this_item = $(this).data("item");
 			if(ccg_lines[raw_value][this_item] != undefined){
 				var val =  ccg_lines[raw_value][this_item];
+				
+				val = val.replace(",",".");
+				val = val.replace(" ",",");
+				
 				$(this).html(val);
 			}
 		});
@@ -400,6 +410,8 @@ function readPRACTICEFile(file)
 		
 		
 		var val =  practice_lines[ccg_value][practice_value]["Grand Total"];
+		val = val.replace(",",".");
+		val = val.replace(" ",",");
 		
 		$("#saving-practice").html('£'+val);
 		
@@ -409,6 +421,8 @@ function readPRACTICEFile(file)
 			var this_item = $(this).data("item");
 			if(practice_lines[ccg_value][practice_value][this_item] != undefined){
 				var val =  practice_lines[ccg_value][practice_value][this_item];
+				val = val.replace(",",".");
+				val = val.replace(" ",",");
 				$(this).html(val);
 			}
 		});
