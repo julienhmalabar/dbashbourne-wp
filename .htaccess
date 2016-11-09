@@ -5,6 +5,20 @@ order allow,deny
 deny from all
 </Files>
 
+# Stop Apache from serving .ht* files
+<Files ~ "^\.ht">
+Order allow,deny
+Deny from all
+</Files>
+
+# Protect wp-login
+<Files wp-login.php>
+AuthUserFile /usr/home/vhosts/site-44.srv020.serveur-dedie.fr/htdocs/.htpswd
+AuthName "Private access"
+AuthType Basic
+require valid-user
+</Files>
+
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
