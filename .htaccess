@@ -20,6 +20,16 @@ require valid-user
 </Files>
 
 
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^dbashbourne.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^dbashbourne.co.uk [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.dbashbourne.co.uk [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.dbashbourne.com [NC]
+RewriteRule ^(.*)$ http://ethypharm.co.uk/$1 [L,R=301,NC]
+ </IfModule>
+
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
