@@ -15,10 +15,10 @@ $(document).ready(function() {
 			valid = validateContact();
 			
 			
-			//var captchResponse = $('#g-recaptcha-response').val();
+			var captchResponse = $('#g-recaptcha-response').val();
 			
 			
-			var captchResponse = '';
+			//var captchResponse = '';
 			
 
 			if(valid) {
@@ -69,8 +69,8 @@ $(document).ready(function() {
 				valid = false;
 			}
 
-			//var captchResponse = $('#g-recaptcha-response').val();
-			var captchResponse = '65465';
+			var captchResponse = $('#g-recaptcha-response').val();
+			
 			if(captchResponse.length == 0 ) {
 				$(".section-contact-error .error-recaptcha").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
