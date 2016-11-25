@@ -25,9 +25,10 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
-    
-    
 <?
+if(is_page_template('page-templates/contact.php')){ ?>   
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+<? }
 if(is_page_template('page-templates/faq.php')){
 
 $products_label = [];
