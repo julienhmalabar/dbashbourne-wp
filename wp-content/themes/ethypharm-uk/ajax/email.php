@@ -6,7 +6,7 @@
 	require_once("../../../../wp-load.php");
 	$toEmail =   get_field('contact_form_recipient', 'option');
 	
-	echo $toEmail;
+	//echo $toEmail;
 	
 	if(isset($_POST['captchResponse'])){
           $captcha=$_POST['captchResponse'];  
