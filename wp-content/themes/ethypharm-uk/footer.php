@@ -126,7 +126,7 @@ if ( $prod ->have_posts() ) : ?>
 						</div>
 
 						<div class="col-xs-12 col-md-2">
-							<div class="footer-listTitle"><a href="contact.html"><i class="i-puce"></i> Contact</a></div>
+							<div class="footer-listTitle"><a href="<?=get_site_url();?>/contact/"><i class="i-puce"></i> Contact</a></div>
 						</div>
                         
                         <div class="col-xs-12 col-md-2">
