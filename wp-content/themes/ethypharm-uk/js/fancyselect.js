@@ -60,7 +60,7 @@
         if (trigger.hasClass('open')) {
           //trigger.removeClass("open");
           return setTimeout(function() {
-            return trigger.trigger('close.fs');
+           // return trigger.trigger('close.fs');
           }, 120);
         }
       });
