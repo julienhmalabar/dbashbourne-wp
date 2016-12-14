@@ -95,8 +95,8 @@ $(document).ready(function() {
 		});
 	});
 
-	$(document).on('change.fs  change','.options', function() {
-		    $(this).removeClass("open");
+	$(document).on('click','.options li', function() {
+		    $('.options').removeClass("open");
 			$('.trigger').removeClass('open');
 		});
 		
