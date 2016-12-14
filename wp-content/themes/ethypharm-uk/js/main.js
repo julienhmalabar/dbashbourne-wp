@@ -95,6 +95,11 @@ $(document).ready(function() {
 		});
 	});
 
+	$(document).on('change.fs  change','.options', function() {
+		    $(this).removeClass("open");
+			$('.trigger').removeClass('open');
+		});
+		
 	var select = $('.js-fancySelectUrl');
 	select.fancySelect().on('blur.fs blur change change.fs' , function() {
 	    var url = $(this).val();
