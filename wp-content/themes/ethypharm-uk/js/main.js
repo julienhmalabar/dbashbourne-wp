@@ -90,7 +90,7 @@ $(document).ready(function() {
 	//
 	// Select Box
 	$('.js-fancySelect').fancySelect( function() {
-		$(this).on('change.fs blur.fs blur change', function() {
+		$(this).on('change.fs  change', function() {
 		    $(this).removeClass("open");
 		});
 	});
