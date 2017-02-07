@@ -65,7 +65,7 @@ if(have_posts()) :
 						</div>
 						<div class="cost-calculator-totalpricing">
 							<div class="cost-calculator-totaltext">
-								<span class="line1">TOTAL CCG SAVINGS</span>
+								<span class="line1">TOTAL PRACTICE SAVINGS</span>
 								<span class="line2">across our producs</span>
 							</div>
 							<div id="saving-practice" class="cost-calculator-pricing">£0.00</div>
