@@ -104,7 +104,7 @@ elseif(is_front_page()){
             	<!-- TOPBAR -->
 				<div class="row">
 						<div class="topbar">
-							Ethypharm acquires Martindale Pharma  <a target="_blank" style="text-decoration:underline;" href="http://www.ethypharm.fr/wp-content/uploads/2017/01/Ethypharm-acquires-Martindale-Pharma-in-the-UK-January-2017-FV.pdf">Read more &gt;</a>
+							Ethypharm acquires Martindale Pharma  <a target="_blank" style="text-decoration:underline;" href="http://www.ethypharm.fr/">Read more &gt;</a>
 						</div>
 				</div>
 <?
