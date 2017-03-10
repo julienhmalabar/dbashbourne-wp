@@ -99,7 +99,7 @@ if(is_page_template('page-templates/csc.php')){
 				</div>
 <?
 }
-elseif(is_home()){
+elseif(is_front_page()){
 	?>           
             	<!-- TOPBAR -->
 				<div class="row">
