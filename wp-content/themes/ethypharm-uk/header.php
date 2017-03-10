@@ -99,6 +99,16 @@ if(is_page_template('page-templates/csc.php')){
 				</div>
 <?
 }
+elseif(is_home()){
+	?>           
+            	<!-- TOPBAR -->
+				<div class="row">
+						<div class="topbar">
+							Ethypharm acquires Martindale Pharma  <a style="text-decoration:underline;" href="http://www.ethypharm.fr/wp-content/uploads/2017/01/Ethypharm-acquires-Martindale-Pharma-in-the-UK-January-2017-FV.pdf">Read more &gt;</a>
+						</div>
+				</div>
+<?
+}
 ?>
 
 				<!-- LOGO + Contact link -->
