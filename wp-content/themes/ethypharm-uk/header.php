@@ -104,7 +104,7 @@ elseif(is_front_page()){
             	<!-- TOPBAR -->
 				<div class="row">
 						<div class="topbar">
-							Ethypharm acquires Martindale Pharma  <a target="_blank" style="text-decoration:underline;" href="http://www.ethypharm.fr/">Read more &gt;</a>
+							Ethypharm acquires Martindale Pharma  <a target="_blank" style="text-decoration:underline;" href="http://www.martindalepharma.co.uk/ethypharm-acquires-martindale-pharma-uk/">Read more &gt;</a>
 						</div>
 				</div>
 <?
