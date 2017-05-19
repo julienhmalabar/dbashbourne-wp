@@ -43,7 +43,7 @@ if(have_posts()) :
 						<div class="cost-calculator-totalpricing">
 							<div class="cost-calculator-totaltext clearfix">
 								<span class="line1">TOTAL CCG SAVINGS</span>
-								<span class="line2">across our producs</span>
+								<span class="line2">across our products</span>
 							</div>
 							<div class="cost-calculator-pricing" id="saving-ccg">£0.00</div>
 						</div>
@@ -66,7 +66,7 @@ if(have_posts()) :
 						<div class="cost-calculator-totalpricing">
 							<div class="cost-calculator-totaltext">
 								<span class="line1">TOTAL PRACTICE SAVINGS</span>
-								<span class="line2">across our producs</span>
+								<span class="line2">across our products</span>
 							</div>
 							<div id="saving-practice" class="cost-calculator-pricing">£0.00</div>
 						</div>
