@@ -68,7 +68,7 @@ if ( $prod ->have_posts() ) : ?>
 				<input id="select-type-<? echo get_the_id(); ?>" name="radio-set-1" type="radio" class="filter-selector-<? echo get_the_id(); ?>" /><label for="select-type-<? echo get_the_id(); ?>" class="filter-label-<? echo get_the_id(); ?>"><? the_title(); ?></label>
     <?php endwhile; 
 endif; wp_reset_query();  ?>            
-				<input id="select-type-6" name="radio-set-1" type="radio" class="filter-selector-6" /><label for="select-type-6" class="filter-label-6">Others</label>
+				<!--<input id="select-type-6" name="radio-set-1" type="radio" class="filter-selector-6" /><label for="select-type-6" class="filter-label-6">Others</label>-->
 
 				<div class="collapsing-faq" id="accordion" role="tablist" aria-multiselectable="true">
 <?php
